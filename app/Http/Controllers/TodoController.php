@@ -53,7 +53,7 @@ class TodoController extends Controller
         $input['user_id'] = Auth::id(); //認証されているユーザーのid取得
         $this->todo->fill($input)->save(); //インスタンス化todo->データベースのカラム更新->save true
         // dd($this->todo->fill($input)->save());
-        return redirect()->to('todo'); // redirectが引数なしで呼び出されると　redirextcterインスタンスが返されメソッドを使える. URI toインスタンス
+        return redirect()->route('todo.index'); // redirectが引数なしで呼び出されると　redirextcterインスタンスが返されメソッドを使える. URI toインスタンス
     }
     /**
      * Display the specified resource.
