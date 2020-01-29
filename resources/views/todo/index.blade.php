@@ -3,7 +3,7 @@
 
 <h1 class="page-header">ToDo一覧</h1>
 <p class="text-right">
-  <a class="btn btn-success" href="/todo/create">ToDoを追加</a>
+  <a class="btn btn-success" href="/todo/create">新規作成</a>
 </p>
 <table class="table">
   <thead class="thead-light">
@@ -16,7 +16,7 @@
       <th></th>
     </tr>
   </thead>
-  <tbody>
+  <tbody>o
     @foreach ($todos as $todo)
       <tr>
         <td class="align-middle">{{ $todo->id }}</td>
