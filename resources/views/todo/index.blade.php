@@ -16,7 +16,7 @@
       <th></th>
     </tr>
   </thead>
-  <tbody>o
+  <tbody>
     @foreach ($todos as $todo)
       <tr>
         <td class="align-middle">{{ $todo->id }}</td>
